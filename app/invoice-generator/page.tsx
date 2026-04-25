@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "Is my data safe when creating invoices?",
-    answer: "Absolutely. All invoice generation happens entirely in your browser. Your business details, client information, and financial data never leave your device. We don\u2019t store, transmit, or have access to any information you enter.",
+    answer: "Absolutely. All invoice generation happens entirely in your browser. Your business details, client information, and financial data never leave your device. We don’t store, transmit, or have access to any information you enter.",
   },
   {
     question: "What currencies are supported?",

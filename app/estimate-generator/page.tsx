@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: "Can I set a validity period for my quote?",
-    answer: "Absolutely. The \u201cValid Until\u201d date field lets you specify how long your quote remains valid. This is important for managing pricing commitments and encouraging timely client decisions.",
+    answer: "Absolutely. The “Valid Until” date field lets you specify how long your quote remains valid. This is important for managing pricing commitments and encouraging timely client decisions.",
   },
   {
     question: "Is the PDF download really free?",
