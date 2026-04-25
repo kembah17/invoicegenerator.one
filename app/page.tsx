@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ALL_TOOLS } from "@/lib/tools-data";
 import AdSlot from "@/components/ui/AdSlot";
 import WebSiteSchema from "@/components/seo/WebSiteSchema";
+import HomeToolGrid from "@/components/ui/HomeToolGrid";
 
 export default function HomePage() {
   return (
@@ -64,37 +64,7 @@ export default function HomePage() {
           <h2 style={{ fontSize: 28, fontWeight: 700, textAlign: "center", marginBottom: 32, color: "var(--color-text)" }}>
             Free Document Generators
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20 }}>
-            {ALL_TOOLS.map((tool) => (
-              <Link
-                key={tool.href}
-                href={tool.href}
-                style={{
-                  display: "block",
-                  background: "var(--color-surface)",
-                  border: "1px solid var(--color-border)",
-                  borderRadius: 12,
-                  padding: 24,
-                  textDecoration: "none",
-                  boxShadow: "var(--shadow-sm)",
-                  transition: "box-shadow 0.2s, transform 0.2s",
-                }}
-              >
-                <div style={{ fontSize: 36, marginBottom: 12 }}>
-                  {tool.icon === "invoice" ? "📄" : tool.icon === "receipt" ? "🧾" : "📋"}
-                </div>
-                <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 8, color: "var(--color-text)" }}>
-                  {tool.name}
-                </h3>
-                <p style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.6 }}>
-                  {tool.description}
-                </p>
-                <span style={{ display: "inline-block", marginTop: 12, fontSize: 14, fontWeight: 600, color: "var(--color-primary)" }}>
-                  Use Tool →
-                </span>
-              </Link>
-            ))}
-          </div>
+          <HomeToolGrid />
         </section>
 
         <AdSlot slot="in-content" />

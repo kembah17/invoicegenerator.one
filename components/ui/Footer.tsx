@@ -36,16 +36,16 @@ export default function Footer() {
             <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 12, color: "var(--color-footer-text)" }}>Tools</h3>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {[
-                { href: "/invoice-generator/", label: "Invoice Generator" },
-                { href: "/receipt-generator/", label: "Receipt Generator" },
-                { href: "/estimate-generator/", label: "Estimate Generator" },
+                { href: "/invoice-generator/", icon: "📄", label: "Invoice Generator" },
+                { href: "/receipt-generator/", icon: "🧾", label: "Receipt Generator" },
+                { href: "/estimate-generator/", icon: "📋", label: "Estimate Generator" },
               ].map((link) => (
                 <li key={link.href} style={{ marginBottom: 8 }}>
                   <Link
                     href={link.href}
                     style={{ color: "var(--color-footer-muted)", textDecoration: "none", fontSize: 14 }}
                   >
-                    {link.label}
+                    {link.icon} {link.label}
                   </Link>
                 </li>
               ))}
