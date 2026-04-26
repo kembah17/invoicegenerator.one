@@ -81,7 +81,7 @@ export default function HomePage() {
           <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--color-text)" }}>
             Why Use Our Free Invoice Generator?
           </h2>
-          <div style={{ fontSize: 15, lineHeight: 1.8, color: "var(--color-text-secondary)" }}>
+          <div style={{ fontSize: 15, lineHeight: 1.8, color: "var(--color-text)" }}>
             <p style={{ marginBottom: 16 }}>
               Creating professional invoices shouldn&apos;t cost money or require signing up for yet another service. Our free invoice generator lets you create, customize, and download professional invoices as PDF files — completely free, with no watermarks, no account required, and no limits on how many invoices you can create.
             </p>

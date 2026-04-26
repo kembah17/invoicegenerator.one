@@ -25,8 +25,13 @@ export default function Footer() {
           }}
         >
           <div>
-            <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 12, color: "var(--color-footer-text)" }}>
-              InvoiceGenerator.one
+            <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 12, color: "var(--color-footer-text)", display: "flex", alignItems: "center", gap: 8 }}>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="var(--color-primary)" />
+                <path d="M8 10h16M8 16h12M8 22h14" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                <path d="M22 18l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              invoicegenerator.one
             </h3>
             <p style={{ fontSize: 14, color: "var(--color-footer-muted)", lineHeight: 1.6 }}>
               Free online invoice, receipt, and estimate generator. Create professional documents and download as PDF — no signup required.
@@ -82,7 +87,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: 13, color: "var(--color-footer-muted)" }}>
-            &copy; {new Date().getFullYear()} InvoiceGenerator.one. All rights reserved.
+            &copy; {new Date().getFullYear()} invoicegenerator.one. All rights reserved.
           </p>
           <p style={{ fontSize: 13, color: "var(--color-footer-muted)" }}>
             100% client-side processing &bull; Your data never leaves your browser

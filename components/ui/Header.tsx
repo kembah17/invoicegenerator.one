@@ -50,7 +50,7 @@ export default function Header() {
             <path d="M8 10h16M8 16h12M8 22h14" stroke="white" strokeWidth="2" strokeLinecap="round" />
             <path d="M22 18l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          <span style={{ fontWeight: 700, fontSize: 18 }}>InvoiceGenerator</span>
+          <span style={{ fontWeight: 700, fontSize: 18 }}>invoicegenerator</span>
           <span style={{ color: "var(--color-primary)", fontWeight: 700, fontSize: 18 }}>.one</span>
         </Link>
 
@@ -66,7 +66,7 @@ export default function Header() {
                 color: "var(--color-text-secondary)",
                 textDecoration: "none",
                 fontSize: 14,
-                fontWeight: 500,
+                fontWeight: 600,
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "var(--color-primary)")}
