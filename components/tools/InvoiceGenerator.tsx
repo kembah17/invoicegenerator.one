@@ -1,8 +1,8 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { InvoiceData, InvoiceTemplate, Currency, LineItem } from "@/lib/types";
 import { CURRENCIES } from "@/lib/currency";
-import { generateInvoiceNumber, getTodayDate, getDueDateDefault, createEmptyLineItem, calculateSubtotal, calculateTax, calculateDiscount, calculateTotal } from "@/lib/utils";
+import { generateId, generateInvoiceNumber, getTodayDate, getDueDateDefault, createEmptyLineItem, calculateSubtotal, calculateTax, calculateDiscount, calculateTotal } from "@/lib/utils";
 import { formatCurrency } from "@/lib/currency";
 import { generatePDF, printElement } from "@/lib/pdf";
 import InvoicePreview from "@/components/templates/InvoicePreview";
@@ -67,11 +67,11 @@ export default function InvoiceGenerator() {
   const [data, setData] = useState<InvoiceData>({
     business: { companyName: "", address: "", phone: "", email: "", logo: null },
     client: { name: "", address: "", email: "" },
-    invoiceNumber: generateInvoiceNumber(),
-    date: getTodayDate(),
-    dueDate: getDueDateDefault(),
+    invoiceNumber: "",
+    date: "",
+    dueDate: "",
     paymentTerms: "Net 30",
-    items: [createEmptyLineItem()],
+    items: [{ id: "initial-1", description: "", quantity: 1, unitPrice: 0, amount: 0 }],
     taxRate: 0,
     discountType: "percentage",
     discountValue: 0,
@@ -80,6 +80,19 @@ export default function InvoiceGenerator() {
     template: "professional",
   });
   const [downloading, setDownloading] = useState(false);
+
+  useEffect(() => {
+    setData(prev => ({
+      ...prev,
+      invoiceNumber: prev.invoiceNumber || generateInvoiceNumber(),
+      date: prev.date || getTodayDate(),
+      dueDate: prev.dueDate || getDueDateDefault(),
+      items: prev.items.map(item => ({
+        ...item,
+        id: item.id.startsWith("initial-") ? generateId() : item.id,
+      })),
+    }));
+  }, []);
 
   const updateBusiness = useCallback((field: string, value: string) => {
     setData(prev => ({ ...prev, business: { ...prev.business, [field]: value } }));

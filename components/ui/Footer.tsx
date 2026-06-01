@@ -86,7 +86,7 @@ export default function Footer() {
             gap: 12,
           }}
         >
-          <p style={{ fontSize: 13, color: "var(--color-footer-muted)" }}>
+          <p suppressHydrationWarning style={{ fontSize: 13, color: "var(--color-footer-muted)" }}>
             &copy; {new Date().getFullYear()} invoicegenerator.one. All rights reserved.
           </p>
           <p style={{ fontSize: 13, color: "var(--color-footer-muted)" }}>

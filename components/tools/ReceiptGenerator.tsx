@@ -1,8 +1,8 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { ReceiptData, ReceiptTemplate, Currency, PaymentMethod, LineItem } from "@/lib/types";
 import { CURRENCIES } from "@/lib/currency";
-import { generateReceiptNumber, getTodayDate, createEmptyLineItem, calculateSubtotal } from "@/lib/utils";
+import { generateId, generateReceiptNumber, getTodayDate, createEmptyLineItem, calculateSubtotal } from "@/lib/utils";
 import { formatCurrency } from "@/lib/currency";
 import { generatePDF, printElement } from "@/lib/pdf";
 import ReceiptPreview from "@/components/templates/ReceiptPreview";
@@ -66,10 +66,10 @@ const btnSecondary: React.CSSProperties = {
 export default function ReceiptGenerator() {
   const [data, setData] = useState<ReceiptData>({
     business: { companyName: "", address: "", phone: "", email: "", logo: null },
-    receiptNumber: generateReceiptNumber(),
-    date: getTodayDate(),
+    receiptNumber: "",
+    date: "",
     customerName: "",
-    items: [createEmptyLineItem()],
+    items: [{ id: "initial-1", description: "", quantity: 1, unitPrice: 0, amount: 0 }],
     paymentMethod: "cash",
     amountPaid: 0,
     changeGiven: 0,
@@ -78,6 +78,18 @@ export default function ReceiptGenerator() {
     template: "standard",
   });
   const [downloading, setDownloading] = useState(false);
+
+  useEffect(() => {
+    setData(prev => ({
+      ...prev,
+      receiptNumber: prev.receiptNumber || generateReceiptNumber(),
+      date: prev.date || getTodayDate(),
+      items: prev.items.map(item => ({
+        ...item,
+        id: item.id.startsWith("initial-") ? generateId() : item.id,
+      })),
+    }));
+  }, []);
 
   const updateBusiness = useCallback((field: string, value: string) => {
     setData(prev => ({ ...prev, business: { ...prev.business, [field]: value } }));
