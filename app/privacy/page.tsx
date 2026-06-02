@@ -4,11 +4,11 @@ import AdSlot from "@/components/ui/AdSlot";
 export const metadata: Metadata = {
   title: "Privacy Policy — InvoiceGenerator.one",
   description: "Privacy policy for InvoiceGenerator.one. Learn how we protect your data with client-side processing and our commitment to privacy.",
-  alternates: { canonical: "https://invoicegenerator.one/privacy/" },
+  alternates: { canonical: "https://www.invoicegenerator.one/privacy/" },
   openGraph: {
     title: "Privacy Policy — InvoiceGenerator.one",
     description: "Our commitment to your privacy and data protection.",
-    url: "https://invoicegenerator.one/privacy/",
+    url: "https://www.invoicegenerator.one/privacy/",
     siteName: "InvoiceGenerator.one",
     type: "website",
   },

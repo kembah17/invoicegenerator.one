@@ -8,11 +8,11 @@ import FaqSchema from "@/components/seo/FaqSchema";
 export const metadata: Metadata = {
   title: "Free Receipt Generator — Create & Download PDF Receipts | InvoiceGenerator.one",
   description: "Generate professional payment receipts for free. Multiple templates, payment method tracking, instant PDF download — no signup, no watermarks.",
-  alternates: { canonical: "https://invoicegenerator.one/receipt-generator/" },
+  alternates: { canonical: "https://www.invoicegenerator.one/receipt-generator/" },
   openGraph: {
     title: "Free Receipt Generator — Create & Download PDF Receipts",
     description: "Generate professional payment receipts for free with instant PDF download.",
-    url: "https://invoicegenerator.one/receipt-generator/",
+    url: "https://www.invoicegenerator.one/receipt-generator/",
     siteName: "InvoiceGenerator.one",
     type: "website",
   },

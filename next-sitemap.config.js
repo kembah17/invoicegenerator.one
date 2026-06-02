@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://invoicegenerator.one',
+  siteUrl: 'https://www.invoicegenerator.one',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: './out',

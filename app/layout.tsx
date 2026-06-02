@@ -20,14 +20,14 @@ const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 export const metadata: Metadata = {
   ...(gscVerification && { verification: { google: gscVerification } }),
-  metadataBase: new URL('https://invoicegenerator.one'),
+  metadataBase: new URL('https://www.invoicegenerator.one'),
   robots: { index: true, follow: true },
   title: "Free Invoice Generator Suite | invoicegenerator.one",
   description: "Create professional invoices, receipts, and estimates for free. Download as PDF instantly — no signup, no watermarks. 100% client-side processing.",
   openGraph: {
     title: 'Free Invoice Generator Suite | invoicegenerator.one',
     description: 'Create professional invoices, receipts, and estimates for free. Download as PDF instantly.',
-    url: 'https://invoicegenerator.one',
+    url: 'https://www.invoicegenerator.one',
     siteName: 'invoicegenerator.one',
     type: 'website',
     locale: 'en_US',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: 'Create professional invoices, receipts, and estimates for free. Download as PDF instantly.',
   },
   alternates: {
-    canonical: 'https://invoicegenerator.one',
+    canonical: 'https://www.invoicegenerator.one',
   },
 };
 

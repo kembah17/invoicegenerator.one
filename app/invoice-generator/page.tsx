@@ -8,11 +8,11 @@ import FaqSchema from "@/components/seo/FaqSchema";
 export const metadata: Metadata = {
   title: "Free Invoice Generator — Create & Download PDF Invoices | InvoiceGenerator.one",
   description: "Create professional invoices for free. Multiple templates, auto-calculations, multi-currency support. Download as PDF instantly — no signup, no watermarks.",
-  alternates: { canonical: "https://invoicegenerator.one/invoice-generator/" },
+  alternates: { canonical: "https://www.invoicegenerator.one/invoice-generator/" },
   openGraph: {
     title: "Free Invoice Generator — Create & Download PDF Invoices",
     description: "Create professional invoices for free with multiple templates and instant PDF download.",
-    url: "https://invoicegenerator.one/invoice-generator/",
+    url: "https://www.invoicegenerator.one/invoice-generator/",
     siteName: "InvoiceGenerator.one",
     type: "website",
   },
