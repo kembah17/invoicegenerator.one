@@ -51,7 +51,7 @@ export default function Header() {
             <path d="M22 18l4 4-4 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <span style={{ fontWeight: 700, fontSize: 18 }}>invoicegenerator</span>
-          <span style={{ color: "var(--color-primary)", fontWeight: 700, fontSize: 18 }}>.one</span>
+          <span className="brand-suffix" style={{ color: "var(--color-primary)", fontWeight: 700, fontSize: 18 }}>.one</span>
         </Link>
 
         {/* Desktop nav */}

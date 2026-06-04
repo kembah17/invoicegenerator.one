@@ -1,6 +1,6 @@
 export default function AdSlot({ slot }: { slot: string }) {
   return (
-    <div className="ad-slot" data-ad-slot={slot}>
+    <div className="ad-slot ad-slot-container" data-ad-slot={slot}>
       <div
         style={{
           background: "var(--color-surface-alt)",

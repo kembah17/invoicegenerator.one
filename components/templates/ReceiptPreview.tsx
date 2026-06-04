@@ -34,7 +34,7 @@ function StandardTemplate({ data, total, fc }: TemplateProps) {
       </div>
 
       <div style={{ textAlign: "center", marginBottom: 24 }}>
-        <h1 style={{ fontSize: 28, fontWeight: 700, color: "#0284C7", margin: "0 0 8px" }}>RECEIPT</h1>
+        <h1 style={{ fontSize: 28, fontWeight: 700, color: "#0369A1", margin: "0 0 8px" }}>RECEIPT</h1>
         <p style={{ fontSize: 13, color: "#555" }}>#{data.receiptNumber}</p>
         <p style={{ fontSize: 13, color: "#555" }}>Date: {formatDate(data.date)}</p>
       </div>
@@ -42,7 +42,7 @@ function StandardTemplate({ data, total, fc }: TemplateProps) {
       {/* Customer */}
       {data.customerName && (
         <div style={{ marginBottom: 20, padding: 12, background: "#f8fafc", borderRadius: 6 }}>
-          <p style={{ fontSize: 12, color: "#888", margin: "0 0 4px" }}>Received from:</p>
+          <p style={{ fontSize: 12, color: "#64748B", margin: "0 0 4px" }}>Received from:</p>
           <p style={{ fontSize: 14, fontWeight: 600, margin: 0, color: "#111" }}>{data.customerName}</p>
         </div>
       )}
@@ -50,7 +50,7 @@ function StandardTemplate({ data, total, fc }: TemplateProps) {
       {/* Items */}
       <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: 20 }}>
         <thead>
-          <tr style={{ background: "#0284C7" }}>
+          <tr style={{ background: "#0369A1" }}>
             <th style={{ padding: "10px 12px", textAlign: "left", color: "#fff", fontSize: 12, fontWeight: 600 }}>Item / Service</th>
             <th style={{ padding: "10px 12px", textAlign: "center", color: "#fff", fontSize: 12, fontWeight: 600, width: 60 }}>Qty</th>
             <th style={{ padding: "10px 12px", textAlign: "right", color: "#fff", fontSize: 12, fontWeight: 600, width: 100 }}>Amount</th>
@@ -87,7 +87,7 @@ function StandardTemplate({ data, total, fc }: TemplateProps) {
 
       {/* Thank you */}
       <div style={{ textAlign: "center", padding: 20, background: "#f0f9ff", borderRadius: 8, marginTop: 20 }}>
-        <p style={{ fontSize: 14, fontWeight: 600, color: "#0284C7", margin: 0 }}>
+        <p style={{ fontSize: 14, fontWeight: 600, color: "#0369A1", margin: 0 }}>
           {data.thankYouMessage || "Thank you for your business!"}
         </p>
       </div>

@@ -40,7 +40,7 @@ function ProfessionalTemplate({ data, subtotal, tax, discount, total, fc }: Temp
           {data.business.email && <p style={{ fontSize: 12, color: "#555", margin: "2px 0" }}>{data.business.email}</p>}
         </div>
         <div style={{ textAlign: "right" }}>
-          <h1 style={{ fontSize: 32, fontWeight: 700, color: "#0284C7", margin: 0 }}>ESTIMATE</h1>
+          <h1 style={{ fontSize: 32, fontWeight: 700, color: "#0369A1", margin: 0 }}>ESTIMATE</h1>
           <p style={{ fontSize: 13, color: "#555", margin: "4px 0" }}>#{data.quoteNumber}</p>
           <p style={{ fontSize: 13, color: "#555", margin: "2px 0" }}>Date: {formatDate(data.date)}</p>
           <p style={{ fontSize: 13, color: "#555", margin: "2px 0" }}>Valid Until: {formatDate(data.validUntil)}</p>
@@ -49,7 +49,7 @@ function ProfessionalTemplate({ data, subtotal, tax, discount, total, fc }: Temp
 
       {/* Prepared For */}
       <div style={{ marginBottom: 30, background: "#f8fafc", padding: 16, borderRadius: 6 }}>
-        <h3 style={{ fontSize: 11, fontWeight: 700, color: "#0284C7", textTransform: "uppercase", letterSpacing: 1, margin: "0 0 8px" }}>Prepared For</h3>
+        <h3 style={{ fontSize: 11, fontWeight: 700, color: "#0369A1", textTransform: "uppercase", letterSpacing: 1, margin: "0 0 8px" }}>Prepared For</h3>
         <p style={{ fontSize: 14, fontWeight: 600, margin: "0 0 4px", color: "#111" }}>{data.client.name || "Client Name"}</p>
         <p style={{ fontSize: 12, color: "#555", margin: "2px 0", whiteSpace: "pre-line" }}>{data.client.address}</p>
         {data.client.email && <p style={{ fontSize: 12, color: "#555", margin: "2px 0" }}>{data.client.email}</p>}
@@ -58,7 +58,7 @@ function ProfessionalTemplate({ data, subtotal, tax, discount, total, fc }: Temp
       {/* Items Table */}
       <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: 24 }}>
         <thead>
-          <tr style={{ background: "#0284C7" }}>
+          <tr style={{ background: "#0369A1" }}>
             <th style={{ padding: "10px 12px", textAlign: "left", color: "#fff", fontSize: 12, fontWeight: 600 }}>Description</th>
             <th style={{ padding: "10px 12px", textAlign: "center", color: "#fff", fontSize: 12, fontWeight: 600, width: 70 }}>Qty</th>
             <th style={{ padding: "10px 12px", textAlign: "right", color: "#fff", fontSize: 12, fontWeight: 600, width: 100 }}>Rate</th>
@@ -102,7 +102,7 @@ function ProfessionalTemplate({ data, subtotal, tax, discount, total, fc }: Temp
       {/* Terms */}
       {data.terms && (
         <div style={{ marginTop: 30, padding: 16, background: "#f8fafc", borderRadius: 6, borderLeft: "3px solid #0284C7" }}>
-          <h3 style={{ fontSize: 12, fontWeight: 700, color: "#0284C7", margin: "0 0 6px" }}>Terms & Conditions</h3>
+          <h3 style={{ fontSize: 12, fontWeight: 700, color: "#0369A1", margin: "0 0 6px" }}>Terms & Conditions</h3>
           <p style={{ fontSize: 12, color: "#555", margin: 0, whiteSpace: "pre-line", lineHeight: 1.6 }}>{data.terms}</p>
         </div>
       )}
@@ -113,11 +113,11 @@ function ProfessionalTemplate({ data, subtotal, tax, discount, total, fc }: Temp
         <div style={{ display: "flex", gap: 40 }}>
           <div style={{ flex: 1 }}>
             <div style={{ borderBottom: "1px solid #333", marginBottom: 4, height: 30 }} />
-            <p style={{ fontSize: 11, color: "#888", margin: 0 }}>Client Signature</p>
+            <p style={{ fontSize: 11, color: "#64748B", margin: 0 }}>Client Signature</p>
           </div>
           <div style={{ flex: 1 }}>
             <div style={{ borderBottom: "1px solid #333", marginBottom: 4, height: 30 }} />
-            <p style={{ fontSize: 11, color: "#888", margin: 0 }}>Date</p>
+            <p style={{ fontSize: 11, color: "#64748B", margin: 0 }}>Date</p>
           </div>
         </div>
       </div>
@@ -146,13 +146,13 @@ function ModernTemplate({ data, subtotal, tax, discount, total, fc }: TemplatePr
       {/* Info Row */}
       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 30, gap: 20 }}>
         <div style={{ flex: 1, background: "#f0f9ff", padding: 16, borderRadius: 8 }}>
-          <h3 style={{ fontSize: 11, fontWeight: 700, color: "#0284C7", textTransform: "uppercase", letterSpacing: 1, margin: "0 0 8px" }}>Prepared For</h3>
+          <h3 style={{ fontSize: 11, fontWeight: 700, color: "#0369A1", textTransform: "uppercase", letterSpacing: 1, margin: "0 0 8px" }}>Prepared For</h3>
           <p style={{ fontSize: 14, fontWeight: 600, margin: "0 0 4px", color: "#111" }}>{data.client.name || "Client Name"}</p>
           <p style={{ fontSize: 12, color: "#555", margin: "2px 0", whiteSpace: "pre-line" }}>{data.client.address}</p>
           {data.client.email && <p style={{ fontSize: 12, color: "#555", margin: "2px 0" }}>{data.client.email}</p>}
         </div>
         <div style={{ flex: 1, background: "#f0f9ff", padding: 16, borderRadius: 8 }}>
-          <h3 style={{ fontSize: 11, fontWeight: 700, color: "#0284C7", textTransform: "uppercase", letterSpacing: 1, margin: "0 0 8px" }}>Details</h3>
+          <h3 style={{ fontSize: 11, fontWeight: 700, color: "#0369A1", textTransform: "uppercase", letterSpacing: 1, margin: "0 0 8px" }}>Details</h3>
           <p style={{ fontSize: 12, color: "#555", margin: "4px 0" }}><strong>Date:</strong> {formatDate(data.date)}</p>
           <p style={{ fontSize: 12, color: "#555", margin: "4px 0" }}><strong>Valid Until:</strong> {formatDate(data.validUntil)}</p>
         </div>
@@ -162,10 +162,10 @@ function ModernTemplate({ data, subtotal, tax, discount, total, fc }: TemplatePr
       <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: 24 }}>
         <thead>
           <tr>
-            <th style={{ padding: "12px", textAlign: "left", fontSize: 12, fontWeight: 700, color: "#0284C7", borderBottom: "2px solid #0284C7" }}>Description</th>
-            <th style={{ padding: "12px", textAlign: "center", fontSize: 12, fontWeight: 700, color: "#0284C7", borderBottom: "2px solid #0284C7", width: 70 }}>Qty</th>
-            <th style={{ padding: "12px", textAlign: "right", fontSize: 12, fontWeight: 700, color: "#0284C7", borderBottom: "2px solid #0284C7", width: 100 }}>Rate</th>
-            <th style={{ padding: "12px", textAlign: "right", fontSize: 12, fontWeight: 700, color: "#0284C7", borderBottom: "2px solid #0284C7", width: 100 }}>Amount</th>
+            <th style={{ padding: "12px", textAlign: "left", fontSize: 12, fontWeight: 700, color: "#0369A1", borderBottom: "2px solid #0284C7" }}>Description</th>
+            <th style={{ padding: "12px", textAlign: "center", fontSize: 12, fontWeight: 700, color: "#0369A1", borderBottom: "2px solid #0284C7", width: 70 }}>Qty</th>
+            <th style={{ padding: "12px", textAlign: "right", fontSize: 12, fontWeight: 700, color: "#0369A1", borderBottom: "2px solid #0284C7", width: 100 }}>Rate</th>
+            <th style={{ padding: "12px", textAlign: "right", fontSize: 12, fontWeight: 700, color: "#0369A1", borderBottom: "2px solid #0284C7", width: 100 }}>Amount</th>
           </tr>
         </thead>
         <tbody>
@@ -196,7 +196,7 @@ function ModernTemplate({ data, subtotal, tax, discount, total, fc }: TemplatePr
               <span>Discount</span><span>-{fc(discount)}</span>
             </div>
           )}
-          <div style={{ display: "flex", justifyContent: "space-between", padding: "12px 0", fontSize: 18, fontWeight: 700, borderTop: "2px solid #0284C7", marginTop: 8, color: "#0284C7" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", padding: "12px 0", fontSize: 18, fontWeight: 700, borderTop: "2px solid #0284C7", marginTop: 8, color: "#0369A1" }}>
             <span>Total</span><span>{fc(total)}</span>
           </div>
         </div>
@@ -204,7 +204,7 @@ function ModernTemplate({ data, subtotal, tax, discount, total, fc }: TemplatePr
 
       {data.terms && (
         <div style={{ marginTop: 30, padding: 16, background: "#f8fafc", borderRadius: 8, borderLeft: "4px solid #06b6d4" }}>
-          <h3 style={{ fontSize: 12, fontWeight: 700, color: "#0284C7", margin: "0 0 6px" }}>Terms & Conditions</h3>
+          <h3 style={{ fontSize: 12, fontWeight: 700, color: "#0369A1", margin: "0 0 6px" }}>Terms & Conditions</h3>
           <p style={{ fontSize: 12, color: "#555", margin: 0, whiteSpace: "pre-line", lineHeight: 1.6 }}>{data.terms}</p>
         </div>
       )}
@@ -214,12 +214,12 @@ function ModernTemplate({ data, subtotal, tax, discount, total, fc }: TemplatePr
         <div style={{ flex: 1, padding: 16, border: "2px solid #047857", borderRadius: 8, textAlign: "center" }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: "#047857", margin: "0 0 12px" }}>ACCEPT</p>
           <div style={{ borderBottom: "1px solid #ccc", marginBottom: 4, height: 24 }} />
-          <p style={{ fontSize: 10, color: "#888", margin: 0 }}>Signature & Date</p>
+          <p style={{ fontSize: 10, color: "#64748B", margin: 0 }}>Signature & Date</p>
         </div>
         <div style={{ flex: 1, padding: 16, border: "2px solid #dc2626", borderRadius: 8, textAlign: "center" }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: "#dc2626", margin: "0 0 12px" }}>DECLINE</p>
           <div style={{ borderBottom: "1px solid #ccc", marginBottom: 4, height: 24 }} />
-          <p style={{ fontSize: 10, color: "#888", margin: 0 }}>Signature & Date</p>
+          <p style={{ fontSize: 10, color: "#64748B", margin: 0 }}>Signature & Date</p>
         </div>
       </div>
     </div>
