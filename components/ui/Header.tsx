@@ -55,7 +55,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav style={{ display: "flex", alignItems: "center", gap: 4 }} className="hidden md:flex">
+        <nav style={{ alignItems: "center", gap: 4 }} className="hidden md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -79,7 +79,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile menu button */}
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }} className="md:hidden">
+        <div style={{ alignItems: "center", gap: 8 }} className="flex md:hidden">
           <ThemeToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}

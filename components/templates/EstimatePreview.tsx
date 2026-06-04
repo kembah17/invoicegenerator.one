@@ -211,8 +211,8 @@ function ModernTemplate({ data, subtotal, tax, discount, total, fc }: TemplatePr
 
       {/* Accept/Decline */}
       <div style={{ marginTop: 40, display: "flex", gap: 16 }}>
-        <div style={{ flex: 1, padding: 16, border: "2px solid #059669", borderRadius: 8, textAlign: "center" }}>
-          <p style={{ fontSize: 12, fontWeight: 700, color: "#059669", margin: "0 0 12px" }}>ACCEPT</p>
+        <div style={{ flex: 1, padding: 16, border: "2px solid #047857", borderRadius: 8, textAlign: "center" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: "#047857", margin: "0 0 12px" }}>ACCEPT</p>
           <div style={{ borderBottom: "1px solid #ccc", marginBottom: 4, height: 24 }} />
           <p style={{ fontSize: 10, color: "#888", margin: 0 }}>Signature & Date</p>
         </div>
