@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Tailwind utility class mappings - uses actual values for build-time resolution */
-@theme inline {
+@theme {
   --color-primary: #0284C7;
   --color-primary-light: #1CB0FC;
   --color-primary-dark: #016CA3;
@@ -135,6 +135,7 @@
   --color-text-heading: #F8FAFC;
   --color-text-link: #1CB0FC;
   --color-brand: #1CB0FC;
+  --color-primary: #1CB0FC;
   --color-brand-dark: #0284C7;
   --color-brand-darker: #016CA3;
   --color-brand-light: #58C5FD;
