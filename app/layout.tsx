@@ -22,7 +22,10 @@ export const metadata: Metadata = {
   ...(gscVerification && { verification: { google: gscVerification } }),
   metadataBase: new URL('https://www.invoicegenerator.one'),
   robots: { index: true, follow: true },
-  title: "Free Invoice Generator Suite | invoicegenerator.one",
+  title: {
+    default: 'Free Invoice Generator Suite | invoicegenerator.one',
+    template: '%s | invoicegenerator.one',
+  },
   description: "Create professional invoices, receipts, and estimates for free. Download as PDF instantly — no signup, no watermarks. 100% client-side processing.",
   openGraph: {
     title: 'Free Invoice Generator Suite | invoicegenerator.one',
