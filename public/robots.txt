@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.invoicegenerator.one
+Host: https://invoicegenerator.one
 
 # Sitemaps
-Sitemap: https://www.invoicegenerator.one/sitemap.xml
+Sitemap: https://invoicegenerator.one/sitemap.xml

@@ -8,11 +8,11 @@ import FaqSchema from "@/components/seo/FaqSchema";
 export const metadata: Metadata = {
   title: "Free Estimate & Quote Generator — Create & Download PDF Quotes | InvoiceGenerator.one",
   description: "Create professional project estimates and quotes for free. Multiple templates, auto-calculations, acceptance sections. Download as PDF — no signup, no watermarks.",
-  alternates: { canonical: "https://www.invoicegenerator.one/estimate-generator/" },
+  alternates: { canonical: "https://invoicegenerator.one/estimate-generator/" },
   openGraph: {
     title: "Free Estimate & Quote Generator — Create & Download PDF Quotes",
     description: "Create professional project estimates and quotes for free with instant PDF download.",
-    url: "https://www.invoicegenerator.one/estimate-generator/",
+    url: "https://invoicegenerator.one/estimate-generator/",
     siteName: "InvoiceGenerator.one",
     type: "website",
   },
